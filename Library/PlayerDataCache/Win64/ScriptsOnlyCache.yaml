@@ -64,21 +64,21 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11734}
+      Script: {instanceID: 11736}
     - Class: 114
-      Script: {instanceID: 12046}
+      Script: {instanceID: 12048}
     - Class: 114
-      Script: {instanceID: 12100}
+      Script: {instanceID: 12102}
     - Class: 114
-      Script: {instanceID: 12806}
+      Script: {instanceID: 12808}
     - Class: 114
-      Script: {instanceID: 13588}
+      Script: {instanceID: 13590}
     - Class: 114
-      Script: {instanceID: 13872}
+      Script: {instanceID: 13874}
     - Class: 114
-      Script: {instanceID: 14414}
+      Script: {instanceID: 14416}
     - Class: 114
-      Script: {instanceID: 15056}
+      Script: {instanceID: 15058}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -131,43 +131,43 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11734}
+      Script: {instanceID: 11736}
     - Class: 114
-      Script: {instanceID: 11928}
+      Script: {instanceID: 11930}
     - Class: 114
-      Script: {instanceID: 11938}
+      Script: {instanceID: 11940}
     - Class: 114
-      Script: {instanceID: 12046}
+      Script: {instanceID: 12048}
     - Class: 114
-      Script: {instanceID: 12100}
+      Script: {instanceID: 12102}
     - Class: 114
-      Script: {instanceID: 12806}
+      Script: {instanceID: 12808}
     - Class: 114
-      Script: {instanceID: 12978}
+      Script: {instanceID: 12980}
     - Class: 114
-      Script: {instanceID: 13444}
+      Script: {instanceID: 13446}
     - Class: 114
-      Script: {instanceID: 13588}
+      Script: {instanceID: 13590}
     - Class: 114
-      Script: {instanceID: 13852}
+      Script: {instanceID: 13854}
     - Class: 114
-      Script: {instanceID: 14178}
+      Script: {instanceID: 14180}
     - Class: 114
-      Script: {instanceID: 14394}
+      Script: {instanceID: 14396}
     - Class: 114
-      Script: {instanceID: 14400}
+      Script: {instanceID: 14402}
     - Class: 114
-      Script: {instanceID: 14414}
+      Script: {instanceID: 14416}
     - Class: 114
-      Script: {instanceID: 14422}
+      Script: {instanceID: 14424}
     - Class: 114
-      Script: {instanceID: 14444}
+      Script: {instanceID: 14446}
     - Class: 114
-      Script: {instanceID: 14448}
+      Script: {instanceID: 14450}
     - Class: 114
-      Script: {instanceID: 14716}
+      Script: {instanceID: 14718}
     - Class: 114
-      Script: {instanceID: 15056}
+      Script: {instanceID: 15058}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -208,21 +208,21 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11734}
+      Script: {instanceID: 11736}
     - Class: 114
-      Script: {instanceID: 12046}
+      Script: {instanceID: 12048}
     - Class: 114
-      Script: {instanceID: 12100}
+      Script: {instanceID: 12102}
     - Class: 114
-      Script: {instanceID: 12806}
+      Script: {instanceID: 12808}
     - Class: 114
-      Script: {instanceID: 13504}
+      Script: {instanceID: 13506}
     - Class: 114
-      Script: {instanceID: 13588}
+      Script: {instanceID: 13590}
     - Class: 114
-      Script: {instanceID: 14414}
+      Script: {instanceID: 14416}
     - Class: 114
-      Script: {instanceID: 15056}
+      Script: {instanceID: 15058}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -532,7 +532,7 @@ ScriptsOnlyBuild:
     className: RemoteTestResultSender
   - hash:
       serializedVersion: 2
-      Hash: a3181ba4056df9fdf823ccc903f17993
+      Hash: 705ea29e3a94f6b1416fa3be924c684c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MainMenuController
@@ -811,5 +811,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/MainMenuScene.unity
   - Assets/Scenes/ControlScene.unity
   - Assets/Scenes/GameplayScene.unity
-  playerPath: E:/Unity Build Games/Razor Squadron 1.0.0/Try - Star Wars 2D Shooting
-    Game.exe
+  playerPath: E:/Unity Build Games/Razor Squadron 1.0.0/Razor Squadron 1.0.0.exe
