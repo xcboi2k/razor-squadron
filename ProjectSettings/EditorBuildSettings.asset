@@ -8,9 +8,27 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenuScene.unity
     guid: 46e18030446e7e7409b553b975dee08c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ControlScene.unity
     guid: 23386ae835c2e964ab5a65a4ab62eb87
+  - enabled: 1
+    path: Assets/Scenes/SelectShipScene.unity
+    guid: 9211d52e2978faa419c7d99bc96a8489
+  - enabled: 1
+    path: Assets/Scenes/SelectXWingScene.unity
+    guid: a2b67305f372d9b4eaf75d31107f5a8a
+  - enabled: 1
+    path: Assets/Scenes/SelectAWingScene.unity
+    guid: 6dde1877795a63146822f5228a6b0298
+  - enabled: 1
+    path: Assets/Scenes/SelectYWingScene.unity
+    guid: 63d309a93e4c08a44bd8cd99e24974db
+  - enabled: 1
+    path: Assets/Scenes/SelectMAATScene.unity
+    guid: 238b173a5b30ff94ca79df109e8346d3
+  - enabled: 1
+    path: Assets/Scenes/LoadingScene.unity
+    guid: 4295aff8ed4bdbf4c95162245f171580
   - enabled: 1
     path: Assets/Scenes/GameplayScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
