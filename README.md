@@ -7,7 +7,6 @@
 # Version 1.0.0
 - Single level
 - Single player character
-- Download Link: https://xcboi2k.itch.io/razor-squadron-100
 
 # Version 2.0.0 - 12/05/2020 Update
 - Revamped Main Menu (better interface and design)
@@ -20,3 +19,5 @@
 - When selecting ships, high scores are displayed
 - Fixed buggy UI from the previous version (UI scaling with screen)
 - Buttons now have highlighted versions and clicked versions for better interaction
+
+Download Link: https://xcboi2k.itch.io/razor-squadron
