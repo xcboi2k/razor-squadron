@@ -19,13 +19,13 @@ Embark on an adrenaline-fueled journey with Razor Squadron, the thrilling 2D sho
 [Unity-logo]: https://img.shields.io/badge/Unity-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [Unity-url]: https://unity.com/
 
-### Devlogs
+## Devlogs
 
-* Version 1.0.0
+### Version 1.0.0
 - Single level
 - Single player character
 
-* Version 2.0.0 - 12/05/2020 Update
+### Version 2.0.0 - 12/05/2020 Update
 - Revamped Main Menu (better interface and design)
 - Added 3 ships (Y-Wing, A-Wing, MAAT)
 - X-Wing has 4 new designs, Y-Wing has 4 designs, A-Wing has 4 designs, MAAT has 4 designs
@@ -37,6 +37,6 @@ Embark on an adrenaline-fueled journey with Razor Squadron, the thrilling 2D sho
 - Fixed buggy UI from the previous version (UI scaling with screen)
 - Buttons now have highlighted versions and clicked versions for better interaction
 
-### Download
+## Download
 
 Download Link: https://xcboi2k.itch.io/razor-squadron
