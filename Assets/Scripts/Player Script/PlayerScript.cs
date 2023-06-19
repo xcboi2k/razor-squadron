@@ -9,7 +9,6 @@ public class PlayerScript : MonoBehaviour
     public bool isAlive;
     private float speed = 5f;
     private float forwardSpeed = 3f;
-    public int playerScore;
 
     public GameObject player;
     public Animator playerAnim;
@@ -19,19 +18,14 @@ public class PlayerScript : MonoBehaviour
 
     public GameObject laserPrefab1, laserPrefab2, bombPrefab;
     public GameObject laserHolder1, laserHolder2, bombHolder;
-
-    public Text finalScoreText;
-    
     
     void Awake()
     {
         if(instance == null){
             instance = this;
         }
-
         isAlive = true;
         playerAudioSource.PlayOneShot(noteClip);
-        playerScore = 0;
     }
 
     // Update is called once per frame
@@ -93,12 +87,11 @@ public class PlayerScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D target) {
         if(target.tag == "Enemy"){
-            //Destroy(gameObject);
             playerAudioSource.PlayOneShot(hitClip);
             Debug.Log("Hit an enemy.");
 
-            finalScoreText.text = "" + playerScore;
-            
+            GameObject.Find("Gameplay Controller").GetComponent<ScoreScript>().stopCountingScore = true;
+
             Destroy(target.gameObject);
             SelfDestruct();
 

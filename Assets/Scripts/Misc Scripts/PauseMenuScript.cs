@@ -41,6 +41,6 @@ public class PauseMenuScript : MonoBehaviour
 
     public void Restart(){
         Time.timeScale = 1f;
-        SceneManager.LoadScene("GameplayScene");
+        SceneManager.LoadScene("SelectShipScene");
     }
 }

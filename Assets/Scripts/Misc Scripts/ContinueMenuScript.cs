@@ -10,7 +10,7 @@ public class ContinueMenuScript : MonoBehaviour
     
     public void continueGame(){
         Time.timeScale = 1f;
-        SceneManager.LoadScene("GameplayScene");
+        SceneManager.LoadScene("SelectShipScene");
     }
 
     public void LoadMenu(){

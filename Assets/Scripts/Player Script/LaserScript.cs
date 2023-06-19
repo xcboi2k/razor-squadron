@@ -8,7 +8,7 @@ public class LaserScript : MonoBehaviour
     void OnTriggerEnter2D(Collider2D target) {
         if(target.tag == "Enemy"){
             GameObject.Find("Gameplay Controller").GetComponent<ScoreScript>().score += 10;
-            GameObject.Find("Player").GetComponent<PlayerScript>().playerScore += 10;
+            GameObject.Find("Gameplay Controller").GetComponent<ScoreScript>().finalScore += 10;
             Destroy(gameObject);
 
             GameObject.Find("EnemySound Controller").GetComponent<EnemySoundControllerScript>().PlayAudio();

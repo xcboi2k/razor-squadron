@@ -1,20 +1,31 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - AWingScript
     - AudioScript
     - BombScript
     - CameraScript
     - ContinueMenuScript
-    - ControlsMenuControllerScript
     - EnemyScript
     - EnemySoundControllerScript
+    - GetShipScript
     - LaserScript
-    - MainMenuController
+    - LoadingScreenControllerScript
+    - MAATScript
+    - MainMenuControllerScript
+    - MainMenuSpawnerControllerScript
+    - MenuShipMovementScript
     - Parallax
     - PauseMenuScript
-    - PlayerScript
     - ScoreScript
+    - SelectAWingControllerScript
+    - SelectMAATControllerScript
+    - SelectShipControllerScript
+    - SelectXWingControllerScript
+    - SelectYWingControllerScript
     - SpawnControllerScript
+    - XWingScript
+    - YWingScript
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Tilemap.Editor.dll:
@@ -42,61 +53,9 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
   sceneClasses:
-    Assets/Scenes/ControlScene.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 82
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 11736}
-    - Class: 114
-      Script: {instanceID: 12048}
-    - Class: 114
-      Script: {instanceID: 12102}
-    - Class: 114
-      Script: {instanceID: 12808}
-    - Class: 114
-      Script: {instanceID: 13590}
-    - Class: 114
-      Script: {instanceID: 13874}
-    - Class: 114
-      Script: {instanceID: 14416}
-    - Class: 114
-      Script: {instanceID: 15058}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 212
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
     Assets/Scenes/GameplayScene.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -131,46 +90,101 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11736}
+      Script: {instanceID: 11738}
     - Class: 114
-      Script: {instanceID: 11930}
+      Script: {instanceID: 11876}
     - Class: 114
-      Script: {instanceID: 11940}
+      Script: {instanceID: 11908}
     - Class: 114
-      Script: {instanceID: 12048}
+      Script: {instanceID: 11946}
     - Class: 114
-      Script: {instanceID: 12102}
+      Script: {instanceID: 12054}
     - Class: 114
-      Script: {instanceID: 12808}
+      Script: {instanceID: 12108}
     - Class: 114
-      Script: {instanceID: 12980}
+      Script: {instanceID: 12816}
     - Class: 114
-      Script: {instanceID: 13446}
+      Script: {instanceID: 12990}
     - Class: 114
-      Script: {instanceID: 13590}
+      Script: {instanceID: 13460}
+    - Class: 114
+      Script: {instanceID: 13604}
+    - Class: 114
+      Script: {instanceID: 13658}
+    - Class: 114
+      Script: {instanceID: 13760}
     - Class: 114
       Script: {instanceID: 13854}
     - Class: 114
-      Script: {instanceID: 14180}
+      Script: {instanceID: 13876}
     - Class: 114
-      Script: {instanceID: 14396}
+      Script: {instanceID: 14202}
     - Class: 114
-      Script: {instanceID: 14402}
-    - Class: 114
-      Script: {instanceID: 14416}
+      Script: {instanceID: 14418}
     - Class: 114
       Script: {instanceID: 14424}
     - Class: 114
+      Script: {instanceID: 14438}
+    - Class: 114
       Script: {instanceID: 14446}
     - Class: 114
-      Script: {instanceID: 14450}
+      Script: {instanceID: 14468}
     - Class: 114
-      Script: {instanceID: 14718}
+      Script: {instanceID: 14472}
     - Class: 114
-      Script: {instanceID: 15058}
+      Script: {instanceID: 14744}
+    - Class: 114
+      Script: {instanceID: 15084}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/LoadingScene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11738}
+    - Class: 114
+      Script: {instanceID: 12108}
+    - Class: 114
+      Script: {instanceID: 12816}
+    - Class: 114
+      Script: {instanceID: 14438}
+    - Class: 114
+      Script: {instanceID: 15084}
+    - Class: 114
+      Script: {instanceID: 15130}
+    - Class: 114
+      Script: {instanceID: 15212}
+    - Class: 115
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -199,6 +213,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 82
@@ -208,21 +224,280 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11736}
+      Script: {instanceID: 11738}
     - Class: 114
-      Script: {instanceID: 12048}
+      Script: {instanceID: 12054}
     - Class: 114
-      Script: {instanceID: 12102}
+      Script: {instanceID: 12108}
     - Class: 114
-      Script: {instanceID: 12808}
+      Script: {instanceID: 12800}
     - Class: 114
-      Script: {instanceID: 13506}
+      Script: {instanceID: 12816}
+    - Class: 114
+      Script: {instanceID: 13104}
+    - Class: 114
+      Script: {instanceID: 13604}
+    - Class: 114
+      Script: {instanceID: 13836}
+    - Class: 114
+      Script: {instanceID: 14438}
+    - Class: 114
+      Script: {instanceID: 15084}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/SelectAWingScene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11738}
+    - Class: 114
+      Script: {instanceID: 12054}
+    - Class: 114
+      Script: {instanceID: 12108}
+    - Class: 114
+      Script: {instanceID: 12816}
+    - Class: 114
+      Script: {instanceID: 12908}
+    - Class: 114
+      Script: {instanceID: 13604}
+    - Class: 114
+      Script: {instanceID: 14438}
+    - Class: 114
+      Script: {instanceID: 15084}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/SelectMAATScene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11738}
+    - Class: 114
+      Script: {instanceID: 12054}
+    - Class: 114
+      Script: {instanceID: 12108}
+    - Class: 114
+      Script: {instanceID: 12816}
+    - Class: 114
+      Script: {instanceID: 13604}
+    - Class: 114
+      Script: {instanceID: 14438}
+    - Class: 114
+      Script: {instanceID: 14510}
+    - Class: 114
+      Script: {instanceID: 15084}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/SelectShipScene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11738}
+    - Class: 114
+      Script: {instanceID: 12054}
+    - Class: 114
+      Script: {instanceID: 12108}
+    - Class: 114
+      Script: {instanceID: 12816}
     - Class: 114
       Script: {instanceID: 13590}
     - Class: 114
-      Script: {instanceID: 14416}
+      Script: {instanceID: 13604}
     - Class: 114
-      Script: {instanceID: 15058}
+      Script: {instanceID: 14438}
+    - Class: 114
+      Script: {instanceID: 15084}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/SelectXWingScene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11738}
+    - Class: 114
+      Script: {instanceID: 12054}
+    - Class: 114
+      Script: {instanceID: 12108}
+    - Class: 114
+      Script: {instanceID: 12816}
+    - Class: 114
+      Script: {instanceID: 13122}
+    - Class: 114
+      Script: {instanceID: 13604}
+    - Class: 114
+      Script: {instanceID: 14438}
+    - Class: 114
+      Script: {instanceID: 15084}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/SelectYWingScene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11738}
+    - Class: 114
+      Script: {instanceID: 12054}
+    - Class: 114
+      Script: {instanceID: 12108}
+    - Class: 114
+      Script: {instanceID: 12816}
+    - Class: 114
+      Script: {instanceID: 13604}
+    - Class: 114
+      Script: {instanceID: 14438}
+    - Class: 114
+      Script: {instanceID: 14504}
+    - Class: 114
+      Script: {instanceID: 15084}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -268,13 +543,25 @@ ScriptsOnlyBuild:
     className: TMP_Dropdown
   - hash:
       serializedVersion: 2
+      Hash: 8fe4dbaea20d4eeb3c4056ff4c3127b3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MAATScript
+  - hash:
+      serializedVersion: 2
+      Hash: de54c2fc4261857a6a6f963c178c7722
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AWingScript
+  - hash:
+      serializedVersion: 2
       Hash: e7a73f5f78ba6445195ec23b74a1ce2d
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
-      Hash: 210f4f7dedd1c1527843746fffb2661a
+      Hash: b5f8435f88c0c16a1b4f45a1dc659b5b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerScript
@@ -448,6 +735,12 @@ ScriptsOnlyBuild:
     className: Shadow
   - hash:
       serializedVersion: 2
+      Hash: 9e8f93f9542e927e45f3f6a73ad3d01b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MenuShipMovementScript
+  - hash:
+      serializedVersion: 2
       Hash: cc4274b586df3c02688bac01b88bd16c
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -484,16 +777,34 @@ ScriptsOnlyBuild:
     className: ControlTrack
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SelectAWingControllerScript
+  - hash:
+      serializedVersion: 2
       Hash: 8dc90e648ac06f43bdd31ac9fa8f4579
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Selectable
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 9e8f93f9542e927e45f3f6a73ad3d01b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyScript
+  - hash:
+      serializedVersion: 2
+      Hash: 76af4be7955740fd48b102b7d26f4582
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MainMenuControllerScript
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SelectXWingControllerScript
   - hash:
       serializedVersion: 2
       Hash: 040dd48e3a027d5424519a5fa2009df4
@@ -532,16 +843,16 @@ ScriptsOnlyBuild:
     className: RemoteTestResultSender
   - hash:
       serializedVersion: 2
-      Hash: 705ea29e3a94f6b1416fa3be924c684c
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: MainMenuController
-  - hash:
-      serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextContainer
+  - hash:
+      serializedVersion: 2
+      Hash: d56e28daecba0849b51844d61f8fccc4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SelectShipControllerScript
   - hash:
       serializedVersion: 2
       Hash: f087c23fbfa15475a0d110af46fb0496
@@ -556,10 +867,34 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
+      Hash: e0a6eb5593f89fea73592e03cc32ecbe
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GetShipScript
+  - hash:
+      serializedVersion: 2
+      Hash: 4e674c5bd8aca8b9184013cd77b30240
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: XWingScript
+  - hash:
+      serializedVersion: 2
       Hash: 3164bc883ff663a5cdb32d1ef7e7c0c5
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: VerticalLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 9b12cf483f2cc96b4401d453dd46490b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MainMenuSpawnerControllerScript
+  - hash:
+      serializedVersion: 2
+      Hash: 53fa37e89c99c7429301256d5baefa44
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: YWingScript
   - hash:
       serializedVersion: 2
       Hash: 06f56042c60be8c059d67d45bbc51e67
@@ -694,6 +1029,18 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SelectYWingControllerScript
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SelectMAATControllerScript
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -706,7 +1053,7 @@ ScriptsOnlyBuild:
     className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
-      Hash: a5f2301e020d0fb5260dac4569f71f14
+      Hash: ab2974daebf73135a0e225290a4b72fc
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ScoreScript
@@ -806,9 +1153,20 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: d1e7170560b442b4036ddc14e253b021
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LoadingScreenControllerScript
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenuScene.unity
-  - Assets/Scenes/ControlScene.unity
+  - Assets/Scenes/SelectShipScene.unity
+  - Assets/Scenes/SelectXWingScene.unity
+  - Assets/Scenes/SelectAWingScene.unity
+  - Assets/Scenes/SelectYWingScene.unity
+  - Assets/Scenes/SelectMAATScene.unity
+  - Assets/Scenes/LoadingScene.unity
   - Assets/Scenes/GameplayScene.unity
-  playerPath: E:/Unity Build Games/Razor Squadron 1.0.0/Razor Squadron 1.0.0.exe
+  playerPath: E:/Unity Build Games/Razor Squadron 2.0.0/Razor Squadron 2.0.0.exe
