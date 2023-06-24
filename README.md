@@ -1,7 +1,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/xcboi2k/Razor-Squadron">
-    <img src="Assets/Graphics/Misc. Graphics/Razor Squadron - 8 X 8 IN.jpg" alt="Logo" width="80" height="80">
+    <img src="Assets/_display/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Razor Squadron</h3>
@@ -19,7 +19,7 @@ Embark on an adrenaline-fueled journey with Razor Squadron, the thrilling 2D sho
 [Unity-logo]: https://img.shields.io/badge/Unity-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [Unity-url]: https://unity.com/
 
-## Devlogs
+## DevLogs
 
 ### Version 1.0.0
 - Single level
