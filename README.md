@@ -20,10 +20,17 @@ Embark on an adrenaline-fueled journey with Razor Squadron, the thrilling 2D sho
 [Unity-url]: https://unity.com/
 
 ## Previews
-<a href="https://github.com/xcboi2k/Razor-Squadron">
-  <img src="Assets/_display/preview1.png" alt="Preview 1">
-  <img src="Assets/_display/preview2.png" alt="Preview 2">
-</a>
+<div>
+  <a href="https://github.com/xcboi2k/Razor-Squadron">
+    <img src="Assets/_display/preview1.png" alt="Preview 1">
+  </a>
+</div>
+<div>
+  <a href="https://github.com/xcboi2k/Razor-Squadron">
+    <img src="Assets/_display/preview2.png" alt="Preview 2">
+  </a>
+</div>
+
 
 ## DevLogs
 
